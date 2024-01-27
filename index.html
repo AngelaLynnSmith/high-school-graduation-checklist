@@ -14,24 +14,46 @@
 </head>
 
 <body>
+    <div class="container">
+
+    <header>
     <h1>Graduation Requirement Checklist</h1>
-</body>
-<form action="/url" method="GET">
-    <p><strong>First</strong> name:
+    </header>
+
+    <section class="grid grid-2-columns">
+    <div>
+        <h2><strong>STUDENT NAME</strong></h2>
+    <form action="/url" method="GET">
+    <p><strong>First</strong>
         <input type="text" name="first_name" placeholder="Ex. Angela" required>
     </p>
-    <strong>Middle</strong> name:
+    <strong>Middle</strong>
     <input type="text" name="middle_name" placeholder="Ex. Lynn" required> </p>
-    <strong>Last</strong> name:
+    <strong>Last</strong>
     <input type="text" name="last_name" placeholder="Ex. Smith" required> </p>
     <p<> <strong>ID #</strong>
         <input type="text" name="last_name" placeholder="Ex. 123456" required>
 </form>
+</div>
+
+<div>
+    <h2><strong>PROMOTION CRITERIA</strong></h2>
+    <p><strong>5</strong> units to <strong>10th</strong> grade</p>
+    <p><strong>11</strong> units to <strong>11th</strong> grade</p>
+    <p><strong>17</strong> units to <strong>12th</strong> grade</p>
+    <p><strong>24</strong> units to <strong>Graduate</strong></p>
+</div>
+</section>
+
 <br>
 <br>
 <br>
+<section class="grid grid-2-columns">
+<div>
 <form action="/url" method="GET">
-    <h2>LANGUAGE ARTS (4 units/8 semesters)</h2>
+    <h2>LANGUAGE ARTS</h2>
+    <h3>(4 units/8 semesters)</h3>
+    <br>
     <p>9th Grade Lit & Comp</p>
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
     <button type="submit">Submit</button>
@@ -55,11 +77,13 @@
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
     <button type="submit">Submit</button>
 </form>
-<br>
-<br>
-<br>
+</div>
+
+<div>
 <form action="/url" method="GET">
-    <h2>MATHEMATICS (4 units/8 semesters)</h2>
+    <h2>MATHEMATICS</h2>
+    <h3>(4 units/8 semesters)</h3>
+    <br>
     <p>Foundationns of Algebra</p>
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
     <button type="submit">Submit</button>
@@ -80,19 +104,25 @@
     <button type="submit">Submit</button>
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
     <button type="submit">Submit</button>
-    <p>AMDM/Precalculus/AP Stats/ or AP Calculus/College Readiness</p>
+    <p>AMDM/Precalculus/AP Stats/</p> 
+    <p>or AP Calculus/College Readiness</p>
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
     <button type="submit">Submit</button>
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
     <button type="submit">Submit</button>
 </form>
-
+</div>
+</section>
 <br>
 <br>
 <br>
 
+<section class="grid grid-2-columns">
+    <div>
 <form action="/url" method="GET">
-    <h2>SCIENCE (4 units/8 semesters)</h2>
+    <h2>SCIENCE</h2>
+    <h3>(4 units/8 semesters)</h3>
+    <br>
     <p>Biology</p>
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
     <button type="submit">Submit</button>
@@ -114,12 +144,14 @@
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
     <button type="submit">Submit</button>
 </form>
+</div>
 
-<br>
-<br>
-<br>
+
+<div>
 <form action="/url" method="GET">
-    <h2>SOCIAL STUDIES (3 units/6 semesters)</h2>
+    <h2>SOCIAL STUDIES</h2>
+    <h3>(3 units/6 semesters)</h3>
+    <br>
     <p>Civics/Government</p>
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
     <button type="submit">Submit</button>
@@ -137,16 +169,21 @@
     <button type="submit">Submit</button>
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
     <button type="submit">Submit</button>
-
 </form>
+</div>
+</section>
 
 <br>
 <br>
 <br>
+
+<section class="grid grid-2-columns">
+    <div>
 <form action="/url" method="GET">
     <h2>OTHER REQUIRED COURSES</h2>
     <p>Personal Fitness/Health* (1 unit/2 semesters)</p>
     <p>*3 units of JROTC will fulfill this requirement</p>
+    <br>
     <p>Personal Fitness</p>
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
     <button type="submit">Submit</button>
@@ -169,14 +206,14 @@
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
     <button type="submit">Submit</button>
 </form>
+</div>
 
-<br>
-<br>
-<br>
+
+<div>
 <form action="/url" method="GET">
     <h2>CTAE/Foreign Language or Fine Arts</h2>
-    <h2>(3 units/6 semesters)</h2>
-
+    <h3>(3 units/6 semesters)</h3>
+<br>
     <p><strong># 1</strong>
     <input type="text" name="course_name" placeholder="Enter course name">
     </p>
@@ -202,11 +239,22 @@
     <button type="submit">Submit</button>
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
     <button type="submit">Submit</button>
+
+    </form>
+</div>
+    </section>
+
     <br>
     <br>
     <br>
+
+
+    
+<section class="grid grid-2-columns">
+    <div>
     <form action="/url" method="GET">
-        <h2>General electives (5 units/10 semesters)</h2>
+        <h2>General electives</h2>
+        <h3>(5 units/10 semesters)</h3>
 
         <p><strong># 1</strong>
             <input type="text" name="course_name" placeholder="Enter course name">
@@ -247,21 +295,13 @@
         <button type="submit">Submit</button>
         <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
         <button type="submit">Submit</button>
+</form>
+</div>
 
-        <br>
-        <br>
-        <br>
 
-        <h2><strong>PROMOTION CRITERIA</strong></h2>
-        <p><strong>5</strong> units to <strong>10th</strong> grade</p>
-        <p><strong>11</strong> units to <strong>11th</strong> grade</p>
-        <p><strong>17</strong> units to <strong>12th</strong> grade</p>
-        <p><strong>24</strong> units to <strong>Graduate</strong></p>
-
-        <br>
-
+<div>
         <h2><strong>HOPE RIGOR Requirements</strong></h2>
-        <h2><strong>4 units completed</strong></h2>
+        <h2><strong>(4 units completed)</strong></h2>
 
         <div class="p-2">
             <form onsubmit="return handleData()" method="post" action="#">
@@ -388,11 +428,16 @@
                     <input type="checkbox" name="hope-rigor" id="ap-lang-comp" value="APLanguageComposition"> <label
                         for="ap_language_composition">Latin 2</label>
                 </div>
+
+                <br>
                 
                 <div>
-                    <input type="submit" name="submit" value="Submit" />
+                    <input class="hope=button" type="submit" name="submit" value="Submit" />
+
+                    
                 </div>
             </form>
         </div>
-
+    </section>
+</div>
 </html>
