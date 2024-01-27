@@ -1,5 +1,4 @@
 body {
-    background-color: aqua;
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 1.5px;
     color:black;
@@ -9,6 +8,7 @@ body {
 
 header h1 {
     margin: 30px 0;
+
    
 }
 
@@ -25,7 +25,7 @@ label {
 }
 
 .container    {
-    max-width: 1600px;
+    max-width: 1000px;
     margin: 0 auto;
       
 }
@@ -74,65 +74,5 @@ section {
   
     section {
     padding: 30px;
-  }
-}
-}
-
-header h1 {
-    margin: 30px 0;
-  
-   
-}
-
-
-
-
-p {
-    
-    font-weight: 600;
-    color:black
-}
-
-label {
-    color: black;
-    font-weight: 500;
-}
-
-.container    {
-    max-width: 1600px;
-    margin: 0 auto;
-      
-}
-
-.grid {
-    display: grid;
-    grid-gap: 64px;
-
-}
-
-.grid-2-columns {
-  grid-template-columns: 1fr 1fr;
-}
-
-
-section {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-
-@media (max-width: 960px) {
-  header {
-    padding: 60px 0;
-  }
-
-  header h1 {
-    font-size: 48px;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-    grid-gap: 32px;
   }
 }
