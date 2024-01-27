@@ -33,6 +33,7 @@ label {
 .grid {
     display: grid;
     grid-gap: 64px;
+    outline: 1px solid black;
 
 }
 
