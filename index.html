@@ -44,6 +44,9 @@
     <p><strong>11</strong> units to <strong>11th</strong> grade</p>
     <p><strong>17</strong> units to <strong>12th</strong> grade</p>
     <p><strong>24</strong> units to <strong>Graduate</strong></p>
+    <p><strong>Total credits earned to date: ___</strong></p>
+
+
 </div>
 </section>
 
@@ -70,12 +73,12 @@
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
     
 
-    <p>American Lit & Comp/AP Lang</p>
+    <p>American Lit & Comp/AP Lang/DE</p>
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
     
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
     
-    <p>British Lit & Com/AP Lit & Comp</p><input style="width: 50px" type="number" name="grade" placeholder="Ex.80"
+    <p>Advanced Comp/AP Lit/DE</p><input style="width: 50px" type="number" name="grade" placeholder="Ex.80"
         maxlength="3">
    
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
@@ -108,8 +111,7 @@
 
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
    
-    <p>AMDM/Pre-Calculus/AP Stats/</p> 
-    <p>or AP Calculus/College Readiness</p>
+    <p>Pre-Calculus/CRM/AP/DE</p> 
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
   
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
@@ -140,6 +142,7 @@
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
  
     <p>4th Science</p>
+    <input type="text" name="course_name" placeholder="Enter course name">
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
     
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
@@ -155,16 +158,16 @@
     <p>Civics/Government</p>
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
    
-    <p> Economics/AP Economics</p>
+    <p> Economics/AP/DE</p>
 
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
    
-    <p>World Histoy/AP World History</p>
+    <p>World Histoy/AP</p>
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
     
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
    
-    <p>US History/AP US History</p>
+    <p>US History/AP/DE</p>
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
     
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
@@ -178,9 +181,11 @@
     <div>
 <form action="/url" method="GET">
     <h2>OTHER REQUIRED COURSES</h2>
-    <p>Personal Fitness/Health*</p>
-    <p>(1 unit/2 semesters)</p>
+ 
+    <p>Personal Fitness*</p>
+
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
+    <p>Health*</p>
     <input style="width: 50px" type="number" name="grade" placeholder="Ex.80" maxlength="3">
 </form>
 <p>*3 units of JROTC will fulfill this requirement</p>
@@ -267,7 +272,7 @@
         <h2><strong>HOPE RIGOR Requirements</strong></h2>
         <h3><strong>(4 units completed)</strong></h3>
 
-        <div class="p-2">
+        <div class="hope-rigor-p-2">
             <form onsubmit="return handleData()" method="post" action="#">
                 <h5>Check off your COMPLETED Hope rigor courses:</strong></h5>
                 <div>
@@ -284,9 +289,11 @@
                         for="akgebra_2">Algebra 2</label>
                 </div>
                 <div>
-                    <input type="checkbox" name="hope-rigor" id="accelerated_pre_calculus"
-                        value="Accelerated Pre-Calculus"> <label for="accelerated_pre_calculus">Accelerated
-                        Pre-Calculus</label>
+                    <input type="checkbox" name="hope-rigor" id="honors_algebra_2" value="HonorsAlgebra2"> <label for="honos_algebra_2">Honors Algebra 2</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="hope-rigor" id="ap_pre_calculus"
+                        value="AP Pre-Calculus"> <label for="ap_pre_calculus">AP Pre-Calculus</label>
                 </div>
                 <div>
                     <input type="checkbox" name="hope-rigor" id="pre_calculus" value="Pre-Calculus"> <label
@@ -299,10 +306,6 @@
                 <div>
                     <input type="checkbox" name="hope-rigor" id="ap-statistics" value="AP Statistics"> <label
                         for="ap_statistics">AP Statistics</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="hope-rigor" id="amdm" value="Advanced-Math-Decision-Making"> <label
-                        for="advanced_math_decision_making">Advanced Math Decision Making</label>
                 </div>
                 <div>
                     <input type="checkbox" name="hope-rigor" id="college-readiness-math" value="CollegeReadinessMath"> <label
@@ -324,6 +327,10 @@
                 <div>
                     <input type="checkbox" name="hope-rigor" id="human_anatomy_physiology" value="HumanAnatomyPhysiology"> <label
                         for="human_anatomy_physiology">Human Anatomy/Physiology</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="hope-rigor" id="forensic_science" value="ForensicScience"> <label
+                        for="forensic_science">Forensic Science</label>
                 </div>
 
                 <div>
@@ -385,6 +392,8 @@
                 <div>
                     <input type="checkbox" name="hope-rigor" id="latin2" value="Latin2"> <label for="latin2">Latin 2</label>
                 </div>
+                <p>Any Credits earned in the Dual Enrollment program in the areas of science, social studies, math, English, or Foreign
+                Language that are substantially similar to the courses listed above will be counted towards HOPE rigor requirements.</p>
                 <br>
                 <div>  
                 <input type="button" value="Print this page" onClick="window.print()">
